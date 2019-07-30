@@ -1,9 +1,3 @@
-.boxflex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -234,17 +228,17 @@ header .smallSignUp {
   margin-top: 3rem;
 }
 .middle-container {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
 }
 .middle-container .top-left {
-  border: 1px solid blue;
   width: 50%;
   padding: 25px;
   font-size: 2rem;
-  display: flex;
   background: #F1FFE7;
+}
+.middle-container .top-left h3 {
+  color: black;
 }
 .middle-container .top-left img {
   height: 30rem;
@@ -259,10 +253,13 @@ header .smallSignUp {
   margin: 0px 5px;
 }
 .middle-container .top-right {
-  border: 1px solid black;
   width: 50%;
   padding: 25px;
   font-size: 2rem;
+  background: #A9FDAC;
+}
+.middle-container .top-right h3 {
+  color: black;
 }
 .middle-container .top-right img {
   height: 30rem;
@@ -277,14 +274,44 @@ header .smallSignUp {
   margin: 0px 5px;
 }
 .middle-container .bottom-left {
-  border: 1px solid green;
   width: 50%;
   padding: 25px;
   font-size: 2rem;
+  background: #A9FDAC;
+}
+.middle-container .bottom-left h3 {
+  color: black;
+}
+.middle-container .bottom-left img {
+  height: 30rem;
+}
+.middle-container .bottom-left .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .bottom-left p {
+  margin: 0px 5px;
 }
 .middle-container .bottom-right {
-  border: 1px solid orange;
   width: 50%;
   padding: 25px;
   font-size: 2rem;
+  background: #F1FFE7;
+}
+.middle-container .bottom-right h3 {
+  color: black;
+}
+.middle-container .bottom-right img {
+  height: 30rem;
+}
+.middle-container .bottom-right .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .bottom-right p {
+  margin: 0px 5px;
 }

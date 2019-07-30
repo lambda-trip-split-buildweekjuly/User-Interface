@@ -22,15 +22,17 @@
 }//closes banner
 
 .middle-container{
-        border:1px solid red;
         display:flex;
         flex-wrap:wrap;
     .top-left{
-        border:1px solid blue;
         width:50%;
         .boxes;
-        display:flex;
         background:@creamyGreen;
+
+        h3{
+            color:black;
+        }
+
         img{
             height:30rem;
         }
@@ -42,11 +44,15 @@
             }
     }//closes top left
     
-    
     .top-right{
-        border:1px solid black;
         width:50%;
         .boxes;
+        background:@lightGreen;
+
+        h3{
+            color:black;
+        }
+
         img{
             height:30rem;
         }
@@ -57,14 +63,44 @@
                 margin:0px 5px;
             }
     }//closes top right
+
     .bottom-left{
-        border:1px solid green;
         width:50%;
         .boxes;
+        background:@lightGreen;
+
+        h3{
+            color:black;
+        }
+        
+        img{
+            height:30rem;
+        }
+        .content{
+            .boxflex;
+        }
+            p{
+                margin:0px 5px;
+            }
     }//closes bottom left
+
     .bottom-right{
-        border:1px solid orange;
         width:50%;
         .boxes;
+        background:@creamyGreen;
+
+        h3{
+            color:black;
+        }
+
+        img{
+            height:30rem;
+        }
+        .content{
+            .boxflex;
+        }
+            p{
+                margin:0px 5px;
+            }
     }//closes bottom right
 }//closes middle-container
