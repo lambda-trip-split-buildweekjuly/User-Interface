@@ -269,6 +269,7 @@ footer a {
 }
 .middle-container .top-left p {
   margin: 0px 5px;
+  font-size: 1.8rem;
 }
 .middle-container .top-right {
   width: 50%;
@@ -291,6 +292,7 @@ footer a {
 }
 .middle-container .top-right p {
   margin: 0px 5px;
+  font-size: 1.8rem;
 }
 .middle-container .bottom-left {
   width: 50%;
@@ -313,6 +315,7 @@ footer a {
 }
 .middle-container .bottom-left p {
   margin: 0px 5px;
+  font-size: 1.8rem;
 }
 .middle-container .bottom-right {
   width: 50%;
@@ -335,7 +338,7 @@ footer a {
 }
 .middle-container .bottom-right p {
   margin: 0px 5px;
-  justify-content: center;
+  font-size: 1.8rem;
 }
 .reviews {
   border: 5px solid red;
