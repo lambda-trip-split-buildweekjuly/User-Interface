@@ -228,3 +228,24 @@ header .smallSignUp {
   padding-top: 8px;
   margin-top: 3rem;
 }
+.middle-container {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle-container .top-left {
+  border: 1px solid blue;
+  width: 50%;
+}
+.middle-container .top-right {
+  border: 1px solid black;
+  width: 50%;
+}
+.middle-container .bottom-left {
+  border: 1px solid green;
+  width: 50%;
+}
+.middle-container .bottom-right {
+  border: 1px solid orange;
+  width: 50%;
+}
