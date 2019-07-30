@@ -248,6 +248,11 @@ footer a {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .middle-container {
+    flex-direction: column;
+  }
+}
 .middle-container .top-left {
   width: 50%;
   padding: 25px;
