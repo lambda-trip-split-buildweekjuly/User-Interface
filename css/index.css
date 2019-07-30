@@ -172,12 +172,32 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 header .logo img {
   height: 7rem;
   margin-left: 5rem;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  header .logo img {
+    height: 5.5rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 header nav {
   margin-left: 35%;
+}
+@media (max-width: 800px) {
+  header nav {
+    margin-left: 0;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -185,6 +205,9 @@ header nav a {
   font-size: 2.5rem;
   text-align: center;
   padding: 0 3rem;
+}
+header nav a:hover {
+  color: #F46C3A;
 }
 header .smallSignUp {
   height: 40px;
@@ -201,6 +224,11 @@ header .smallSignUp {
 header .smallSignUp:hover {
   background: #F46C3A;
 }
+@media (max-width: 800px), (max-width: 500px) {
+  header .smallSignUp {
+    display: none;
+  }
+}
 .banner {
   margin: 50px auto;
   display: flex;
@@ -209,9 +237,28 @@ header .smallSignUp:hover {
   align-items: center;
   height: 90%;
 }
+@media (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .banner .phone {
   width: 50%;
   margin-left: 10rem;
+}
+@media (max-width: 800px) {
+  .banner .phone {
+    width: 100%;
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .phone {
+    margin-left: 0;
+  }
 }
 .banner .phone img {
   height: 60rem;
@@ -229,10 +276,26 @@ header .smallSignUp:hover {
     opacity: 1;
   }
 }
+@media (max-width: 500px) {
+  .banner .phone img {
+    height: 50rem;
+  }
+}
 .banner .bannerText {
   width: 40%;
   padding-top: 5rem;
   margin: 0 3rem;
+}
+@media (max-width: 800px) {
+  .banner .bannerText {
+    margin-left: 10rem;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .banner .bannerText {
+    margin-left: 1rem;
+  }
 }
 .banner .bannerText .signUp {
   height: 60px;
@@ -249,4 +312,14 @@ header .smallSignUp:hover {
 }
 .banner .bannerText .signUp:hover {
   background: #F46C3A;
+}
+@media (max-width: 800px) {
+  .banner .bannerText .signUp {
+    margin-left: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .bannerText .signUp {
+    margin-left: 11rem;
+  }
 }
