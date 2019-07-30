@@ -221,7 +221,6 @@ header .smallSignUp {
   margin-right: 5rem;
   padding-top: 10px;
 }
-<<<<<<< HEAD
 header .smallSignUp:hover {
   background: #F46C3A;
 }
@@ -229,7 +228,7 @@ header .smallSignUp:hover {
   header .smallSignUp {
     display: none;
   }
-=======
+}
 footer {
   width: 100%;
   height: 100px;
@@ -246,7 +245,6 @@ footer a {
   font-size: 2.5rem;
   text-align: center;
   padding: 0 3rem;
->>>>>>> 9baa1504fba1302b659e2fbb694698b60bdd8445
 }
 .banner {
   margin: 50px auto;
@@ -328,6 +326,8 @@ footer a {
   padding-top: 18px;
   margin-top: 5rem;
   margin-left: 15rem;
+  padding-top: 8px;
+  margin-top: 3rem;
 }
 .banner .bannerText .signUp:hover {
   background: #F46C3A;
