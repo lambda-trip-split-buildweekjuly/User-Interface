@@ -1,20 +1,56 @@
 .banner {
     
-    margin-top: 50px;
+    margin: 50px auto;
     .display-flex(row, space-around);
+    align-items: center;
     height: 90%;
+    @media  @tablet {
+        .display-flex(column, space-between);
+        align-items: center;
+    }
     .phone {
         width: 50%;
-        img {
-            height: 50rem;    
+        margin-left: 10rem;
+        @media @tablet {
+            width: 100%;
+            margin-left: 15rem;
         }
+        @media @mobile {
+            margin-left: 0;
+        }           
+        img {
+            height: 60rem;
+            .animation(1.5s); 
+            @media @mobile {
+                height: 50rem;
+            }  
+        }   
+        
     }
     .bannerText {
-        width: 50%;
+        width: 40%;
         padding-top: 5rem;
+        margin: 0 3rem;
+        @media @tablet {
+            margin-left: 10rem;
+            width: 80%;
+        } 
+        @media @mobile {
+            margin-left: 1rem;
+        } 
         .signUp {
-            .buttons(@mainGreen, 40px, 200px, @white);
+            .buttons(@mainGreen, 60px, 200px, @white);
             font-size: 2.5rem;
+            padding-top: 18px;
+            margin-top: 5rem;
+            margin-left: 15rem;
+            @media @tablet {
+                margin-left: 18rem;
+                
+            }
+            @media @mobile {
+                margin-left: 11rem;
+            }  
             padding-top: 8px;
             margin-top: 3rem;
         }//closes signUp

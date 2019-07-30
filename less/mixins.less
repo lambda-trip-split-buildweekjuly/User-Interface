@@ -6,6 +6,10 @@
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+
+    &:hover {
+        background: @orange;
+    }
 }
 
 .display-flex (@direction, @justify){
@@ -14,6 +18,22 @@
     justify-content: @justify;
  }
 
+ .animation(@time){
+     animation: swirl-in-fwd @time ease-out both;
+
+     @keyframes swirl-in-fwd {
+    0% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotate(0) scale(1);
+                transform: rotate(0) scale(1);
+        opacity: 1;
+      }
+    }
+    
  .boxes(){
     padding:25px;
     font-size:2rem;
