@@ -159,7 +159,6 @@ p {
   font-size: 1.6rem;
 }
 .container {
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -199,6 +198,23 @@ header .smallSignUp {
   margin-left: 50px;
   padding-top: 10px;
 }
+footer {
+  width: 100%;
+  height: 100px;
+  background: #F1FFE7;
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+footer a {
+  text-decoration: none;
+  color: #3AB25C;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 3rem;
+}
 .banner {
   margin-top: 50px;
   display: flex;
@@ -227,4 +243,109 @@ header .smallSignUp {
   font-size: 2.5rem;
   padding-top: 8px;
   margin-top: 3rem;
+}
+.middle-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .middle-container {
+    flex-direction: column;
+  }
+}
+.middle-container .top-left {
+  width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+  background: #546A76;
+  color: white;
+}
+.middle-container .top-left h3 {
+  color: white;
+}
+.middle-container .top-left img {
+  height: 30rem;
+}
+.middle-container .top-left .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .top-left p {
+  margin: 0px 5px;
+  font-size: 1.8rem;
+}
+.middle-container .top-right {
+  width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+  background: #F46C3A;
+  color: white;
+}
+.middle-container .top-right h3 {
+  color: white;
+}
+.middle-container .top-right img {
+  height: 30rem;
+}
+.middle-container .top-right .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .top-right p {
+  margin: 0px 5px;
+  font-size: 1.8rem;
+}
+.middle-container .bottom-left {
+  width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+  background: #3AB25C;
+  color: white;
+}
+.middle-container .bottom-left h3 {
+  color: white;
+}
+.middle-container .bottom-left img {
+  height: 30rem;
+}
+.middle-container .bottom-left .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .bottom-left p {
+  margin: 0px 5px;
+  font-size: 1.8rem;
+}
+.middle-container .bottom-right {
+  width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+  background: #546A76;
+  color: white;
+}
+.middle-container .bottom-right h3 {
+  color: white;
+}
+.middle-container .bottom-right img {
+  height: 30rem;
+}
+.middle-container .bottom-right .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .bottom-right p {
+  margin: 0px 5px;
+  font-size: 1.8rem;
+}
+.reviews {
+  border: 5px solid red;
+  padding: 10px;
 }
