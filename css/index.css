@@ -1,3 +1,9 @@
+.boxflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,7 +165,6 @@ p {
   font-size: 1.6rem;
 }
 .container {
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -236,16 +241,50 @@ header .smallSignUp {
 .middle-container .top-left {
   border: 1px solid blue;
   width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+  display: flex;
+  background: #F1FFE7;
+}
+.middle-container .top-left img {
+  height: 30rem;
+}
+.middle-container .top-left .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .top-left p {
+  margin: 0px 5px;
 }
 .middle-container .top-right {
   border: 1px solid black;
   width: 50%;
+  padding: 25px;
+  font-size: 2rem;
+}
+.middle-container .top-right img {
+  height: 30rem;
+}
+.middle-container .top-right .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.middle-container .top-right p {
+  margin: 0px 5px;
 }
 .middle-container .bottom-left {
   border: 1px solid green;
   width: 50%;
+  padding: 25px;
+  font-size: 2rem;
 }
 .middle-container .bottom-right {
   border: 1px solid orange;
   width: 50%;
+  padding: 25px;
+  font-size: 2rem;
 }
