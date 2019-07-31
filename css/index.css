@@ -163,7 +163,7 @@ p {
 }
 header {
   width: 100%;
-  height: 100px;
+  height: 10rem;
   background: #F1FFE7;
   opacity: 0.6;
   display: flex;
@@ -171,11 +171,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 800px), (max-width: 1292px) {
+@media (max-width: 800px), (max-width: 1292px), (max-width: 500px) {
   header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
   }
 }
 header .logo img {
@@ -183,7 +185,7 @@ header .logo img {
   margin-left: 5rem;
   cursor: pointer;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-width: 1292px) {
   header .logo img {
     height: 5.5rem;
     margin-top: 1rem;
@@ -193,9 +195,17 @@ header .logo img {
 header nav {
   margin-left: 35%;
 }
-@media (max-width: 800px), (max-width: 1292px) {
+@media (max-width: 800px), (max-width: 1292px), (max-width: 500px) {
   header nav {
     margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 header nav a {
@@ -208,6 +218,12 @@ header nav a {
 header nav a:hover {
   color: #F46C3A;
 }
+@media (max-width: 500px) {
+  header nav a {
+    padding: 1rem;
+    border-bottom: 1px dashed #F46C3A;
+  }
+}
 header .smallSignUp {
   height: 40px;
   width: 150px;
@@ -218,14 +234,15 @@ header .smallSignUp {
   border-radius: 5px;
   font-size: 2rem;
   margin-right: 5rem;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 header .smallSignUp:hover {
   background: #F46C3A;
 }
-@media (max-width: 800px), (max-width: 500px), (max-width: 1292px) {
+@media (max-width: 800px), (max-width: 1292px) {
   header .smallSignUp {
-    display: none;
+    margin-top: 1rem;
+    margin-right: 0;
   }
 }
 footer {
