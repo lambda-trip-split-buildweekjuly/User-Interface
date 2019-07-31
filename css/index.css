@@ -348,12 +348,12 @@ footer a {
 }
 @media (max-width: 800px) {
   .banner .bannerText .signUp {
-    margin-left: 18rem;
+    margin-left: 9rem auto;
   }
 }
 @media (max-width: 500px) {
   .banner .bannerText .signUp {
-    margin-left: 11rem;
+    margin: 5rem auto;
   }
 }
 .middle-container {
