@@ -1,38 +1,14 @@
 .testing{
     border:5px solid red;
 }
-header {
-    // position: fixed;
-    width: 100%;
-    height: 100px;
-    background: @creamyGreen;
-    opacity: 0.6;
-    .display-flex(row, space-between);
-    align-items: center;
-    align-content: space-between;
-    // margin-bottom: 200px;
-    .logo {
-        img{
-            height: 90px;
-        }
-    }
-    nav {
-        margin-left: 35%;
-        
-        a {
-            text-decoration: none;
-            color: @mainGreen;
-            font-size: 2.5rem;
-            text-align: center;
-            padding: 0 3rem;
-        }
-    }
-}
 
 .background-img{
     background-image: url(../img/jack-finnigan-g4B4x6hhkO0-unsplash.jpg);
     background-size:cover;
     background-position:center;
+    img {
+        height: 100%;
+    }
 
     @media @mobile{
         background-position:bottom;
