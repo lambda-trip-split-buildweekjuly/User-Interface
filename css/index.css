@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Heebo', sans-serif;
-  background: url(/img/world-bg.png);
 }
 h1,
 h2,
@@ -171,13 +170,33 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-content: space-between;
+}
+@media (max-width: 800px), (max-width: 1292px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 header .logo img {
-  height: 90px;
+  height: 7rem;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  header .logo img {
+    height: 5.5rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 header nav {
   margin-left: 35%;
+}
+@media (max-width: 800px), (max-width: 1292px) {
+  header nav {
+    margin-left: 0;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -185,6 +204,9 @@ header nav a {
   font-size: 2.5rem;
   text-align: center;
   padding: 0 3rem;
+}
+header nav a:hover {
+  color: #F46C3A;
 }
 header .smallSignUp {
   height: 40px;
@@ -195,8 +217,16 @@ header .smallSignUp {
   cursor: pointer;
   border-radius: 5px;
   font-size: 2rem;
-  margin-left: 50px;
+  margin-right: 5rem;
   padding-top: 10px;
+}
+header .smallSignUp:hover {
+  background: #F46C3A;
+}
+@media (max-width: 800px), (max-width: 500px), (max-width: 1292px) {
+  header .smallSignUp {
+    display: none;
+  }
 }
 footer {
   width: 100%;
@@ -216,24 +246,75 @@ footer a {
   padding: 0 3rem;
 }
 .banner {
-  margin-top: 50px;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   height: 90%;
+}
+@media (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .banner .phone {
   width: 50%;
+  margin-left: 10rem;
+}
+@media (max-width: 800px) {
+  .banner .phone {
+    width: 100%;
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .phone {
+    margin-left: 0;
+  }
 }
 .banner .phone img {
-  height: 50rem;
+  height: 60rem;
+  animation: swirl-in-fwd 1.5s ease-out both;
+}
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 500px) {
+  .banner .phone img {
+    height: 50rem;
+  }
 }
 .banner .bannerText {
-  width: 50%;
+  width: 40%;
   padding-top: 5rem;
+  margin: 0 3rem;
+}
+@media (max-width: 800px) {
+  .banner .bannerText {
+    margin-left: 10rem;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .banner .bannerText {
+    margin-left: 1rem;
+  }
 }
 .banner .bannerText .signUp {
-  height: 40px;
+  height: 50px;
   width: 200px;
   background: #3AB25C;
   color: #FFFFFF;
@@ -241,8 +322,22 @@ footer a {
   cursor: pointer;
   border-radius: 5px;
   font-size: 2.5rem;
-  padding-top: 8px;
-  margin-top: 3rem;
+  padding-top: 1.3rem;
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+.banner .bannerText .signUp:hover {
+  background: #F46C3A;
+}
+@media (max-width: 800px) {
+  .banner .bannerText .signUp {
+    margin-left: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .banner .bannerText .signUp {
+    margin-left: 11rem;
+  }
 }
 .middle-container {
   display: flex;
@@ -387,6 +482,112 @@ footer a {
 }
 .reviews {
   border: 5px solid red;
+}
+.topPic img {
+  width: 100%;
+  height: 20rem;
+  animation: jello-horizontal 2s both infinite;
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.aboutContainer {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.aboutContainer .person {
+  width: 33.33%;
+  height: 35rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutContainer .person {
+    width: 100%;
+  }
+}
+.aboutContainer img {
+  height: 20rem;
+  width: 20rem;
+  align-self: center;
+  margin-top: 2rem;
+}
+.aboutContainer h3 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.aboutContainer li {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.aboutContainer li .fa-github {
+  color: #FFFFFF;
+}
+.aboutContainer .conner {
+  background: #3AB25C;
+}
+.aboutContainer .john {
+  background: #546A76;
+}
+.aboutContainer .jojo {
+  background: #F46C3A;
+}
+.aboutContainer .kevin {
+  background: #546A76;
+}
+.aboutContainer .teami {
+  background: #A9FDAC;
+}
+.aboutContainer .vlad {
+  background: #546A76;
+}
+.aboutContainer .vlad h3 {
+  font-size: 2.3rem;
+}
+.aboutContainer .zach {
+  background: #F46C3A;
 }
 .testing {
   border: 5px solid red;
