@@ -1,21 +1,23 @@
 header {
     // position: fixed;
     width: 100%;
-    height: 100px;
+    height: 10rem;
     background: @creamyGreen;
     opacity: 0.6;
     .display-flex(row, space-between);
     align-items: center;
-    @media @tablet, (max-width: 1292px) {
-        .display-flex(column, space-between);
-        
+    @media @tablet, (max-width: 1292px), @mobile {
+        .display-flex(column, center);
+        align-items: center;
+        height: 25%;
     }
+   
     .logo {
         img{
             height: 7rem;
             margin-left: 5rem;
             cursor: pointer;
-            @media @tablet {
+            @media @tablet, (max-width: 1292px) {
                 height: 5.5rem;
                 margin-top: 1rem;
                 margin-left: 0;
@@ -24,8 +26,13 @@ header {
     }
     nav {
         margin-left: 35%;
-        @media @tablet, (max-width: 1292px){
-            margin-left: 0; 
+        @media @tablet, (max-width: 1292px), @mobile {
+            margin-left: 0;
+            margin-top: 1rem; 
+        }
+        @media @mobile {
+            .display-flex(column, center);
+            
         }
         a {
             text-decoration: none;
@@ -36,15 +43,20 @@ header {
             &:hover{
                 color: @orange;
             }
+            @media @mobile {
+                padding: 1rem;
+                border-bottom: 1px dashed @orange;
+            }
         }
     }
     .smallSignUp {
         .buttons(@mainGreen, 40px, 150px, @white);
         font-size: 2rem;       
         margin-right: 5rem;
-        padding-top: 10px;
-        @media @tablet, @mobile, (max-width: 1292px) {
-            display: none;
+        padding-top: 1rem;
+        @media @tablet, (max-width: 1292px) {
+            margin-top: 1rem;
+            margin-right: 0;
         }
     }
 }
