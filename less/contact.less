@@ -18,6 +18,7 @@ header {
     }
     nav {
         margin-left: 35%;
+        
         a {
             text-decoration: none;
             color: @mainGreen;
@@ -32,6 +33,10 @@ header {
     background-image: url(../img/jack-finnigan-g4B4x6hhkO0-unsplash.jpg);
     background-size:cover;
     background-position:center;
+
+    @media @mobile{
+        background-position:bottom;
+    }
 }
 
 form{
@@ -43,6 +48,7 @@ form{
     transition: all 3s ease-in-out;
     font-size:2rem;
     color:white;
+    
     
     .contact{
         width:50%;

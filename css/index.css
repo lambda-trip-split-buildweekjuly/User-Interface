@@ -421,6 +421,11 @@ header nav a {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 500px) {
+  .background-img {
+    background-position: bottom;
+  }
+}
 form {
   display: flex;
   flex-direction: column;
