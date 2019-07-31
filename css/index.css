@@ -356,11 +356,21 @@ footer a {
   background: #546A76;
   color: white;
 }
+@media (max-width: 500px) {
+  .middle-container .top-left {
+    width: 100%;
+  }
+}
 .middle-container .top-left h3 {
   color: white;
 }
 .middle-container .top-left img {
   height: 30rem;
+}
+@media (max-width: 500px) {
+  .middle-container .top-left img {
+    height: 20rem;
+  }
 }
 .middle-container .top-left .content {
   display: flex;
@@ -379,11 +389,21 @@ footer a {
   background: #F46C3A;
   color: white;
 }
+@media (max-width: 500px) {
+  .middle-container .top-right {
+    width: 100%;
+  }
+}
 .middle-container .top-right h3 {
   color: white;
 }
 .middle-container .top-right img {
   height: 30rem;
+}
+@media (max-width: 500px) {
+  .middle-container .top-right img {
+    height: 20rem;
+  }
 }
 .middle-container .top-right .content {
   display: flex;
@@ -402,11 +422,21 @@ footer a {
   background: #3AB25C;
   color: white;
 }
+@media (max-width: 500px) {
+  .middle-container .bottom-left {
+    width: 100%;
+  }
+}
 .middle-container .bottom-left h3 {
   color: white;
 }
 .middle-container .bottom-left img {
   height: 30rem;
+}
+@media (max-width: 500px) {
+  .middle-container .bottom-left img {
+    height: 20rem;
+  }
 }
 .middle-container .bottom-left .content {
   display: flex;
@@ -425,11 +455,21 @@ footer a {
   background: #546A76;
   color: white;
 }
+@media (max-width: 500px) {
+  .middle-container .bottom-right {
+    width: 100%;
+  }
+}
 .middle-container .bottom-right h3 {
   color: white;
 }
 .middle-container .bottom-right img {
   height: 30rem;
+}
+@media (max-width: 500px) {
+  .middle-container .bottom-right img {
+    height: 30rem;
+  }
 }
 .middle-container .bottom-right .content {
   display: flex;
@@ -444,4 +484,73 @@ footer a {
 .reviews {
   border: 5px solid red;
   padding: 10px;
+}
+.testing {
+  border: 5px solid red;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: #F1FFE7;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+header .logo img {
+  height: 90px;
+}
+header nav {
+  margin-left: 35%;
+}
+header nav a {
+  text-decoration: none;
+  color: #3AB25C;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+.background-img {
+  background-image: url(../img/jack-finnigan-g4B4x6hhkO0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 500px) {
+  .background-img {
+    background-position: bottom;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: all 3s ease-in-out;
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  form {
+    margin-top: 120px;
+  }
+}
+form .contact {
+  width: 50%;
+  background: transparent;
+  font-size: 1.5rem;
+  color: white;
+}
+form .submit {
+  background: #A9FDAC;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  width: 50%;
+  margin: 20px;
+}
+form .submit:hover {
+  background: #3AB25C;
 }
