@@ -311,7 +311,7 @@ footer a {
 }
 @media (max-width: 500px) {
   .banner .phone img {
-    height: 50rem;
+    width: 100%;
   }
 }
 .banner .bannerText {
