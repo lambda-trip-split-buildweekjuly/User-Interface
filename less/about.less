@@ -1,0 +1,75 @@
+.topPic {
+    img{
+        width: 100%;
+        height: 20rem;
+        .aboutAnima(2s);
+    }
+}
+    
+.aboutContainer {
+    width: 800px;
+    .display-flex(row, space-between);
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    @media @mobile {
+        width: 100%;
+        .display-flex(column, center);
+    }
+    .person {
+        width: 33.33%;
+        height: 35rem;
+        // border: 1px solid @darkGrey;
+        text-align: center;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    img {                   
+        height: 20rem;
+        width: 20rem;
+        align-self: center;
+        margin-top: 2rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+        color: @white;
+        padding: 1rem;
+    }
+    li{
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: @white;
+        .fa-github {
+            color: @white;
+        }
+    }
+    .conner {
+        background: @mainGreen;
+        // opacity: 0.9;
+    }
+    .john {
+        background: @darkGrey;
+        // opacity: 0.9;
+    }
+    .jojo {
+        background: @orange;
+        // opacity: 0.9;
+    }
+    .kevin {
+        background: @darkGrey;
+    }
+    .teami {
+        background: @lightGreen;
+    }
+    .vlad {
+        background: @darkGrey;
+        h3{
+            font-size: 2.3rem;
+        }
+            }
+    .zach {
+        background: @orange;
+    }
+}

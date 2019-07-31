@@ -6,7 +6,7 @@ header {
     opacity: 0.6;
     .display-flex(row, space-between);
     align-items: center;
-    @media @tablet {
+    @media @tablet, (max-width: 1292px) {
         .display-flex(column, space-between);
         
     }
@@ -24,7 +24,7 @@ header {
     }
     nav {
         margin-left: 35%;
-        @media @tablet {
+        @media @tablet, (max-width: 1292px){
             margin-left: 0; 
         }
         a {
@@ -43,7 +43,7 @@ header {
         font-size: 2rem;       
         margin-right: 5rem;
         padding-top: 10px;
-        @media @tablet, @mobile {
+        @media @tablet, @mobile, (max-width: 1292px) {
             display: none;
         }
     }

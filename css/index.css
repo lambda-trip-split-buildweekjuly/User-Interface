@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Heebo', sans-serif;
-  background: url(/img/world-bg.png);
 }
 h1,
 h2,
@@ -172,7 +171,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-width: 1292px) {
   header {
     display: flex;
     flex-direction: column;
@@ -194,7 +193,7 @@ header .logo img {
 header nav {
   margin-left: 35%;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-width: 1292px) {
   header nav {
     margin-left: 0;
   }
@@ -224,7 +223,7 @@ header .smallSignUp {
 header .smallSignUp:hover {
   background: #F46C3A;
 }
-@media (max-width: 800px), (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px), (max-width: 1292px) {
   header .smallSignUp {
     display: none;
   }
@@ -484,6 +483,112 @@ footer a {
 .reviews {
   border: 5px solid red;
   padding: 10px;
+}
+.topPic img {
+  width: 100%;
+  height: 20rem;
+  animation: jello-horizontal 2s both infinite;
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.aboutContainer {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+@media (max-width: 500px) {
+  .aboutContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.aboutContainer .person {
+  width: 33.33%;
+  height: 35rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutContainer .person {
+    width: 100%;
+  }
+}
+.aboutContainer img {
+  height: 20rem;
+  width: 20rem;
+  align-self: center;
+  margin-top: 2rem;
+}
+.aboutContainer h3 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.aboutContainer li {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.aboutContainer li .fa-github {
+  color: #FFFFFF;
+}
+.aboutContainer .conner {
+  background: #3AB25C;
+}
+.aboutContainer .john {
+  background: #546A76;
+}
+.aboutContainer .jojo {
+  background: #F46C3A;
+}
+.aboutContainer .kevin {
+  background: #546A76;
+}
+.aboutContainer .teami {
+  background: #A9FDAC;
+}
+.aboutContainer .vlad {
+  background: #546A76;
+}
+.aboutContainer .vlad h3 {
+  font-size: 2.3rem;
+}
+.aboutContainer .zach {
+  background: #F46C3A;
 }
 .testing {
   border: 5px solid red;
