@@ -225,6 +225,7 @@ header nav a:hover {
   }
 }
 header .smallSignUp {
+  text-decoration: none;
   height: 40px;
   width: 150px;
   background: #3AB25C;
@@ -331,6 +332,7 @@ footer a {
   }
 }
 .banner .bannerText .signUp {
+  text-decoration: none;
   height: 50px;
   width: 200px;
   background: #3AB25C;
