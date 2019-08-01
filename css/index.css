@@ -383,11 +383,6 @@ footer a {
 .middle-container .top-left img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .top-left img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .top-left img {
     height: 20rem;
@@ -425,11 +420,6 @@ footer a {
 }
 .middle-container .top-right img {
   height: 30rem;
-}
-@media (max-width: 800px) {
-  .middle-container .top-right img {
-    height: 25rem;
-  }
 }
 @media (max-width: 500px) {
   .middle-container .top-right img {
@@ -469,11 +459,6 @@ footer a {
 .middle-container .bottom-left img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .bottom-left img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .bottom-left img {
     height: 20rem;
@@ -512,14 +497,9 @@ footer a {
 .middle-container .bottom-right img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .bottom-right img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .bottom-right img {
-    height: 30rem;
+    height: 20rem;
   }
 }
 @media (max-width: 800px) {
