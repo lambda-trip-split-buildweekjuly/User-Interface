@@ -523,6 +523,10 @@ footer a {
   margin: 0px 5px;
   font-size: 1.8rem;
 }
+.testheader {
+  display: flex;
+  justify-content: center;
+}
 .reviews {
   display: flex;
   flex-direction: row;
