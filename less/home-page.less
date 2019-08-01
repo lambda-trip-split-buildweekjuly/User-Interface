@@ -4,16 +4,15 @@
     .display-flex(row, space-around);
     align-items: center;
     height: 90%;
-    @media  @tablet {
-        .display-flex(column, space-between);
-        align-items: center;
+    @media  @tablet, (max-width: 1100px) {
+        .display-flex(column, center);        
     }
     .phone {
         width: 50%;
         margin-left: 10rem;
-        @media @tablet {
+        @media @tablet, (max-width: 1100px) {
             width: 100%;
-            margin-left: 15rem;
+            margin: 0 auto;
         }
         @media @mobile {
             margin-left: 0;
@@ -21,8 +20,15 @@
         img {
             height: 60rem;
             .animation(1.5s); 
+            @media (max-width: 1100px) {
+               margin-left: 20rem;
+            }
+            @media @tablet {
+                margin-left: 10rem;
+            }
             @media @mobile {
                 width: 100%;
+                margin-left: 0;
             }  
         }   
         
@@ -45,7 +51,7 @@
             margin-top: 5rem;
             margin-left: 15rem;
             @media @tablet {
-                margin-left: 9rem auto;
+                margin: 9rem auto;
                 
             }
             @media @mobile {

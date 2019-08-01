@@ -273,22 +273,21 @@ footer a {
   align-items: center;
   height: 90%;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-width: 1100px) {
   .banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
   }
 }
 .banner .phone {
   width: 50%;
   margin-left: 10rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-width: 1100px) {
   .banner .phone {
     width: 100%;
-    margin-left: 15rem;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -312,9 +311,20 @@ footer a {
     opacity: 1;
   }
 }
+@media (max-width: 1100px) {
+  .banner .phone img {
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .banner .phone img {
+    margin-left: 10rem;
+  }
+}
 @media (max-width: 500px) {
   .banner .phone img {
     width: 100%;
+    margin-left: 0;
   }
 }
 .banner .bannerText {
@@ -354,7 +364,7 @@ footer a {
 }
 @media (max-width: 800px) {
   .banner .bannerText .signUp {
-    margin-left: 9rem auto;
+    margin: 9rem auto;
   }
 }
 @media (max-width: 500px) {
