@@ -228,7 +228,6 @@ header .smallSignUp {
   height: 40px;
   width: 150px;
   background: #3AB25C;
-  color: #FFFFFF;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
@@ -238,6 +237,10 @@ header .smallSignUp {
 }
 header .smallSignUp:hover {
   background: #F46C3A;
+}
+header .smallSignUp a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 @media (max-width: 800px), (max-width: 1292px) {
   header .smallSignUp {
@@ -334,7 +337,6 @@ footer a {
   height: 50px;
   width: 200px;
   background: #3AB25C;
-  color: #FFFFFF;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
@@ -345,6 +347,10 @@ footer a {
 }
 .banner .bannerText .signUp:hover {
   background: #F46C3A;
+}
+.banner .bannerText .signUp a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 @media (max-width: 800px) {
   .banner .bannerText .signUp {
