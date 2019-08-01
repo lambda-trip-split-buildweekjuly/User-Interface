@@ -533,6 +533,7 @@ footer a {
 @media (max-width: 500px) {
   .reviews {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
@@ -544,7 +545,7 @@ footer a {
 @media (max-width: 500px) {
   .reviews .re {
     flex-wrap: wrap;
-    width: 25%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -552,12 +553,12 @@ footer a {
     display: none;
   }
 }
-img {
+.reviews img {
   width: 15rem;
   height: 15rem;
   margin: 2rem 5rem;
 }
-p {
+.reviews p {
   border-radius: 5rem;
   background: #F1FFE7;
   color: #546A76;
