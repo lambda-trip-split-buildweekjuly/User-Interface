@@ -544,20 +544,34 @@ footer a {
   align-items: center;
   margin: 2rem auto;
 }
-@media (max-width: 800px), (max-width: 500px) {
+@media (max-width: 500px) {
   .reviews {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
   }
 }
 .reviews .re {
   width: 20%;
 }
-.reviews img {
+@media (max-width: 500px) {
+  .reviews .re {
+    flex-wrap: wrap;
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .reviews .re.review2 {
+    display: none;
+  }
+}
+img {
   width: 15rem;
   height: 15rem;
   margin: 2rem 5rem;
 }
-.reviews p {
+p {
   border-radius: 5rem;
   background: #F1FFE7;
   color: #546A76;

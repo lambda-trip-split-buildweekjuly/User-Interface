@@ -216,13 +216,31 @@
     align-items: center;
     margin: 2rem auto;
     // border:5px solid red;
-    @media @tablet, @mobile {
-        display: none;
+    @media @mobile {
+        display: flex;
+        flex-wrap:wrap;
+        width:100%;
+        align-items: center;
     }
     .re {
         width: 20%;
-    }
+
+        @media @mobile{
+            flex-wrap:wrap;
+            width:25%;
+        }
+       
+    }//closes .re
     
+    .re.review2{ 
+        @media @mobile{
+            display:none;
+        }
+    }
+        
+}//closes .reviews
+    
+
     img {
         width: 15rem;
         height: 15rem;
@@ -235,4 +253,4 @@
         padding: 2.5rem;
     }
     
-}
+
