@@ -389,11 +389,6 @@ footer a {
 .middle-container .top-left img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .top-left img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .top-left img {
     height: 20rem;
@@ -431,11 +426,6 @@ footer a {
 }
 .middle-container .top-right img {
   height: 30rem;
-}
-@media (max-width: 800px) {
-  .middle-container .top-right img {
-    height: 25rem;
-  }
 }
 @media (max-width: 500px) {
   .middle-container .top-right img {
@@ -475,11 +465,6 @@ footer a {
 .middle-container .bottom-left img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .bottom-left img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .bottom-left img {
     height: 20rem;
@@ -518,14 +503,9 @@ footer a {
 .middle-container .bottom-right img {
   height: 30rem;
 }
-@media (max-width: 800px) {
-  .middle-container .bottom-right img {
-    height: 25rem;
-  }
-}
 @media (max-width: 500px) {
   .middle-container .bottom-right img {
-    height: 30rem;
+    height: 20rem;
   }
 }
 @media (max-width: 800px) {
@@ -543,6 +523,10 @@ footer a {
   margin: 0px 5px;
   font-size: 1.8rem;
 }
+.testheader {
+  display: flex;
+  justify-content: center;
+}
 .reviews {
   display: flex;
   flex-direction: row;
@@ -550,13 +534,28 @@ footer a {
   align-items: center;
   margin: 2rem auto;
 }
-@media (max-width: 800px), (max-width: 500px) {
+@media (max-width: 500px) {
   .reviews {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
   }
 }
 .reviews .re {
   width: 20%;
+}
+@media (max-width: 500px) {
+  .reviews .re {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .reviews .re.review2 {
+    display: none;
+  }
 }
 .reviews img {
   width: 15rem;
